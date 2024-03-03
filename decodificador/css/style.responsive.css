@@ -1,0 +1,26 @@
+@media (max-width: 990px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 690px) {
+    .input__container__buttons button {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        width: 100%;
+    }
+
+    .input__container__buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input__container__buttons button {
+        width: 100%;
+    }
+}
