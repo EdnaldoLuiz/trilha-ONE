@@ -13,7 +13,7 @@
 }
 
 .input__container__textarea {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .output__container {
@@ -24,7 +24,7 @@
 
 .output__container__textarea {
     background: var(--box-bg);
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .input__container__buttons {

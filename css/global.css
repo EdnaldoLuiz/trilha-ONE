@@ -11,6 +11,8 @@
     --primary-color: #2BDEFD;
     --secondary-color: #3494a5;
 
+    --main-gradient: linear-gradient(191deg, #010e1c -5.44%, #061220 52.05%, #000 112.41%);
+
     --primary-text-color: #98D4DE;
     --box-bg:#021017;
     --main-border: 1px solid var(--primary-color);
@@ -18,9 +20,7 @@
     --primary-border-radius: .7rem;
 }
 
-/* 
------------ HTML ----------------
-*/
+/* -------------- HTML ---------------*/
 
 header {
     background-color: var(--primary-color);
@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     height: 100%;
     overflow-x: hidden;
-    background: black;
+    background: var(--main-gradient);
 }
 
 body::before {
@@ -52,8 +52,11 @@ body::before {
     mask-image: radial-gradient(rgba(0, 0, 0, .45), transparent 70%);
 }
 
+textarea::placeholder {
+    color: var(--primary-text-color); 
+}
+
 footer {
-    border-top: var(--main-border);
     padding: 1rem;
     margin-top: auto;
     width: 100%;

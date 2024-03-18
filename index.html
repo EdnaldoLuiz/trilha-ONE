@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400&display=swap" rel="stylesheet">
+
     <title>Decodificador de Texto - ONE</title>
 </head>
 
@@ -31,9 +32,9 @@
                     <textarea placeholder="Digite o texto aqui..."></textarea>
                 </div>
                 <div class="input__container__buttons">
-                    <button>Decodificar</button>
-                    <button>Encriptar</button>
-                    <button>Limpar</button>
+                    <button id="decryptButton">Decodificar</button>
+                    <button id="encryptButton">Encriptar</button>
+                    <button id="clearButton">Limpar</button>
                 </div>
             </div>
             <div class="output__container">
@@ -50,18 +51,20 @@
         <div class="social__container">
             <div class="social__container__icons">
                 <a href="https://github.com/EdnaldoLuiz" target="_blank">
-                    <img src="/decodificador/assets/icons/github.png" alt="Github">
+                    <img src="./assets/icons/github.png" alt="Github">
                 </a>
                 <a href="https://www.linkedin.com/in/ednaldoluiz" target="_blank">
-                    <img src="/decodificador/assets/icons/linkedin.png" alt="Linkedin">
+                    <img src="./assets/icons/linkedin.png" alt="Linkedin">
                 </a>
                 <a href="https://ednaldo-luiz.vercel.app" target="_blank">
-                    <img src="/decodificador/assets/icons/portfolio.png" alt="Portfolio">
+                    <img src="./assets/icons/portfolio.png" alt="Portfolio">
                 </a>
             </div>
             <p>© 2024 Copyright - Ednaldo Luiz</p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
