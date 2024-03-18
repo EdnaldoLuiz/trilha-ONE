@@ -6,6 +6,7 @@ const outputTextArea = document.querySelector('.output__container__textarea text
 const encryptButton = document.querySelector('#encryptButton');
 const decryptButton = document.querySelector('#decryptButton');
 const clearButton = document.querySelector('#clearButton');
+const copyButton = document.querySelector('.copy-button');
 
 encryptButton.addEventListener('click', function() {
     const inputText = inputTextArea.value;
@@ -24,4 +25,10 @@ decryptButton.addEventListener('click', function() {
 clearButton.addEventListener('click', function() {
     inputTextArea.value = clearText();
     outputTextArea.value = clearText();
+});
+
+copyButton.addEventListener('click', function() {
+    const textarea = document.querySelector('.output__container__textarea textarea');
+    textarea.select();
+    document.execCommand('copy');
 });

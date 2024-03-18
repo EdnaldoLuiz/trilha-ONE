@@ -24,7 +24,19 @@
 
 .output__container__textarea {
     background: var(--box-bg);
-    /* border: 2px solid red; */
+}
+
+.copy-button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+}
+
+.copy-button img {
+    width: 20px; /* Ajuste conforme necessário */
+    height: 20px; /* Ajuste conforme necessário */
 }
 
 .input__container__buttons {
